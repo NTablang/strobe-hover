@@ -60,7 +60,7 @@ export default function Home() {
 
   const handleMouseEnter = (rowIndex, charIndex) => {
     const surroundingIndexes = [];
-    const range = 1; // adjust range to include more characters around the hovered character
+    const range = 3; // adjust range to include more characters around the hovered character
  
     for (let i = -range; i <= range; i++) {
       for (let j = -range; j <= range; j++) {
@@ -90,8 +90,8 @@ export default function Home() {
                 style={
                   isHovered(i, j)
                     ? {
-                        transform: `translate(${(j - hoveredIndexes[0].char) * 5}px, ${
-                          (i - hoveredIndexes[0].row) * 5
+                        transform: `translate(${(j - hoveredIndexes[0]?.char) * 5}px, ${
+                          (i - hoveredIndexes[0]?.row) * 5
                         }px)`,
                       }
                     : {}
