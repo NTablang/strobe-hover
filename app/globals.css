@@ -31,3 +31,45 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.ascii-container span {
+  transition: opacity 0.2s;
+}
+
+/* .ascii-container span:hover,
+.ascii-container span:hover ~ span,
+.ascii-container span:hover ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span,
+.ascii-container span:hover ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span {
+  opacity: 0.1;
+}
+
+.ascii-container span:hover {
+  opacity: 1 !important;
+}
+
+.ascii-container span {
+  transition: opacity 0.2s;
+}
+
+.ascii-container span.hovered {
+  opacity: 1 !important;
+} */
+
+
+.ascii-container span {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.ascii-container span.moved {
+  transform: translate(0, 0);
+}
